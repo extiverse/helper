@@ -1,0 +1,51 @@
+{
+    "name": "extiverse/helper",
+    "description": "The swiss army knife in managing Flarum communities through cli.",
+    "keywords": ["cli", "flarum", "extiverse"],
+    "homepage": "https://extiverse.com",
+    "type": "project",
+    "license": "proprietary",
+    "support": {
+        "issues": "https://github.com/extiverse/helper/issues",
+        "support": "https://discuss.flarum.org/d/25246",
+        "source": "https://github.com/extiverse/helper"
+    },
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@klabbers.email",
+            "homepage": "https://luceos.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^6.5.5",
+        "illuminate/database": "^8.0",
+        "illuminate/http": "^8.0",
+        "padraic/phar-updater": "^1.0.6"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.9",
+        "laravel-zero/framework": "^8.0",
+        "mockery/mockery": "^1.4.2",
+        "pestphp/pest": "^0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": ["bin/extiverse"]
+}
